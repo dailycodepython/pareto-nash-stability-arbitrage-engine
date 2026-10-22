@@ -2,22 +2,6 @@
 
 **Pareto-Nash Stability Arbitrage Engine** is a high-performance, JAX-compatible analytical framework designed to audit, filter, and police decentralized infrastructures, multi-agent networks, and game-theoretic micro-environments.
 
-```mermaid
-
-
-graph TD
-    A[Входные матрицы: Matrix A & Matrix B] --> B(Биматричный аудит)
-    B --> C{Поиск чистых стратегий}
-    C -->|Личный интерес| D[Картирование Равновесия Нэша]
-    C -->|Глобальное благо| E[Картирование Оптимума Парето]
-    D --> F[Пересечение масок решений]
-    E --> F
-    F --> G{Есть совпадение Нэш = Парето?}
-    G -->|Да: Дивергенция = 0| H[🟢 Среда Безопасна / ОДОБРИТЬ]
-    G -->|Нет| I[Вычисление Евклидова расстояния]
-    I --> J{Расстояние < Threshold?}
-    J -->|Да| H
-    J -->|Нет| K[🔴 Высокий риск конфликта / ОТКЛОНИТЬ]
 
 ```
 ## 🧠 Core Philosophy & Strategy
@@ -38,26 +22,26 @@ The framework mathematically bifurcates environments into two explicit classes:
 *   **Scalability & JAX Foundation:** Fully compatible with Google's `JAX` ecosystem, preparing the code for massive matrix dimensions and parallel execution on hardware accelerators (GPU/TPU).
 
 ---
-```mermaid
-graph LR
-    subgraph Входящие архитектуры сред
-        A[Серверные микросервисы]
-        B[Облачные каналы]
-        C[P2P-протоколы]
-    )
-    
-    A --> D{PNSAE Фильтр}
-    B --> D
-    C --> D
-    
-    D -->|Дивергенция: 0.0000| E[🟢 Зона Рационального Альтруизма]
-    D -->|Дивергенция: 1.4142| F[🔴 Зона Деградации Сети]
-    
-    E --> G[Стабильный запуск систем]
-    F --> H[Принудительный аборт / Стоп]
-```
 
 ## 💻 Code Architecture (`engine.py`)
+
+
+```mermaid
+graph TD
+    A[Input Environment: Matrix A & Matrix B] --> B(Bimatrix Analytical Audit)
+    B --> C{Strategic Mapping}
+    C -->|Individual Utility| D[Self-Enforcing Nash Equilibrium]
+    C -->|Global Social Welfare| E[Pareto Optimality Mapping]
+    D --> F[Matrix Mask Intersection]
+    E --> F
+    F --> G{Is Nash == Pareto?}
+    G -->|Yes: Divergence = 0| H[🟢 State: SAFE / APPROVE]
+    G -->|No| I[Calculate Euclidean Distance]
+    I --> J{Distance < Threshold?}
+    J -->|Yes| H
+    J -->|No| K[🔴 State: TOXIC / REJECT]
+```
+
 
 The core analytical pipeline is encapsulated into a production-ready, clean Python class:
 
@@ -123,6 +107,26 @@ class StabilityArbitrageEngine:
 ---
 
 ## 🖥️ Production Real-World Benchmarks
+
+```mermaid
+graph LR
+    subgraph Inbound Infrastructure Environments
+        A[Microservice Load Balancing]
+        B[Bandwidth Cloud Arbitrage]
+        C[P2P Data Exchange]
+    end
+    
+    A --> D{PNSAE Core Filter}
+    B --> D
+    C --> D
+    
+    D -->|Divergence: 0.0000| E[🟢 Stability Corridors]
+    D -->|Divergence: 1.4142| F[🔴 Degenerative Traps]
+    
+    E --> G[Authorized Execution & Deployment]
+    F --> H[Enforced Non-Participation / Abort]
+```
+
 
 The system was evaluated against three realistic, domain-neutral engineering infrastructures included in the pipeline execution block:
 
