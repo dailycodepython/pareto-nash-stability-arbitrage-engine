@@ -3,7 +3,6 @@
 **Pareto-Nash Stability Arbitrage Engine** is a high-performance, JAX-compatible analytical framework designed to audit, filter, and police decentralized infrastructures, multi-agent networks, and game-theoretic micro-environments.
 
 
-```
 ## 🧠 Core Philosophy & Strategy
 
 The engine implements a proactive approach known as **Stability Arbitrage (Enforcement of Rational Altruism)**. Instead of participating blindly in chaotic or adversarial environments, an agent utilizes this engine to audit the structural matrix of an interaction *before* allocating resources. 
@@ -40,7 +39,6 @@ graph TD
     I --> J{Distance < Threshold?}
     J -->|Yes| H
     J -->|No| K["🔴 State: TOXIC / REJECT"]
-```
 
 ---
 
