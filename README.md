@@ -1,5 +1,4 @@
-git clone https://github.com/pareto-nash-stability-arbitrage-engine
-/engine.py
+git clone https://github.com/pareto-nash-stability-arbitrage-engine/engine.py
 
 # Pareto-Nash Stability Arbitrage Engine (PNSAE)
 
