@@ -2,6 +2,9 @@
 
 **Pareto-Nash Stability Arbitrage Engine** is a high-performance, JAX-compatible analytical framework designed to audit, filter, and police decentralized infrastructures, multi-agent networks, and game-theoretic micro-environments.
 
+```mermaid
+
+
 graph TD
     A[Входные матрицы: Matrix A & Matrix B] --> B(Биматричный аудит)
     B --> C{Поиск чистых стратегий}
@@ -16,7 +19,7 @@ graph TD
     J -->|Да| H
     J -->|Нет| K[🔴 Высокий риск конфликта / ОТКЛОНИТЬ]
 
-
+```
 ## 🧠 Core Philosophy & Strategy
 
 The engine implements a proactive approach known as **Stability Arbitrage (Enforcement of Rational Altruism)**. Instead of participating blindly in chaotic or adversarial environments, an agent utilizes this engine to audit the structural matrix of an interaction *before* allocating resources. 
@@ -35,7 +38,7 @@ The framework mathematically bifurcates environments into two explicit classes:
 *   **Scalability & JAX Foundation:** Fully compatible with Google's `JAX` ecosystem, preparing the code for massive matrix dimensions and parallel execution on hardware accelerators (GPU/TPU).
 
 ---
-
+```mermaid
 graph LR
     subgraph Входящие архитектуры сред
         A[Серверные микросервисы]
@@ -52,7 +55,7 @@ graph LR
     
     E --> G[Стабильный запуск систем]
     F --> H[Принудительный аборт / Стоп]
-
+```
 
 ## 💻 Code Architecture (`engine.py`)
 
