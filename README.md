@@ -35,12 +35,13 @@ graph TD
     D --> F[Matrix Mask Intersection]
     E --> F
     F --> G{Is Nash == Pareto?}
-    G -->|Yes: Divergence = 0| H[🟢 State: SAFE / APPROVE]
+    G -->|Yes: Divergence = 0| H["🟢 State: SAFE / APPROVE"]
     G -->|No| I[Calculate Euclidean Distance]
     I --> J{Distance < Threshold?}
     J -->|Yes| H
-    J -->|No| K[🔴 State: TOXIC / REJECT]
+    J -->|No| K["🔴 State: TOXIC / REJECT"]
 ```
+
 ---
 
 The core analytical pipeline is encapsulated into a production-ready, clean Python class:
