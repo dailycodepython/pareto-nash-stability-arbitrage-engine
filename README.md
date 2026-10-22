@@ -39,7 +39,7 @@ graph TD
     I --> J{Distance < Threshold?}
     J -->|Yes| H
     J -->|No| K["🔴 State: TOXIC / REJECT"]
-
+```
 ---
 
 The core analytical pipeline is encapsulated into a production-ready, clean Python class:
