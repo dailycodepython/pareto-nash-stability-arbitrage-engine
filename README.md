@@ -14,7 +14,7 @@ The framework mathematically bifurcates environments into two explicit classes:
 *   **🔴 Toxic / Degenerative Environments:** Systems (such as the classic Prisoner's Dilemma or cyclic zero-sum games like Rock-Paper-Scissors) where individual gradients inevitably drag agents toward mutually destructive traps (e.g., mutual betrayal or infinite resource expenditure), despite the existence of a globally superior cooperative state. The engine flags these systems as high-risk and enforces immediate non-participation.
 
 ---
-
+---
 ## 🛠️ Architecture and Engineering Features
 
 *   **Bimatrix Analytical Solver:** Built on raw matrix masks (`jnp.max`) to completely bypass gradient play flaws, saddle points, and local minima entrapment during optimization.
@@ -22,7 +22,7 @@ The framework mathematically bifurcates environments into two explicit classes:
 *   **Scalability & JAX Foundation:** Fully compatible with Google's `JAX` ecosystem, preparing the code for massive matrix dimensions and parallel execution on hardware accelerators (GPU/TPU).
 
 ---
-
+---
 ## 💻 Code Architecture (`engine.py`)
 
 
@@ -41,7 +41,7 @@ graph TD
     J -->|Yes| H
     J -->|No| K[🔴 State: TOXIC / REJECT]
 ```
-
+---
 
 The core analytical pipeline is encapsulated into a production-ready, clean Python class:
 
